@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 
 <html>
-   <head>
-      <title>My Website Title</title>
-      
-      <!-- connect your css files here        -->
-      <!-- connect your javascript files here -->
-   </head>
-   <body>
-      
-   </body>
+  <head>
+    <title>My Website Title</title>
+  </head>
+  <body>
+   Hello, World! </br>
+    <input type="button" value="Hello, Console" onclick="dup()"/>
+    <p id="clone"></p>
+    <script>
+      function dup() {
+      console.log("Hello, World");
+      }
+  </script>
+    <input type="button" value="Hello, Pop-up" onclick="helloAlert();"/>
+    <p id="clone"></p>
+    <script>
+      function helloAlert () {
+      alert("Hello, World");
+    }
+    </script>
+  </body>
 </html>
