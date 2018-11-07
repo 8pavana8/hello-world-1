@@ -23,15 +23,16 @@
   
   </script>
 
- <input type="button" value="Hello, Browser" onclick="dup()"/>
-  <script>
-    function myFunction() {
-        var h = document.createElement("p");
-        var t = document.createTextNode("Hello World");
-        h.appendChild(t);
-        document.body.appendChild(h);
+ 
+   <input type="button" value="Hello, Browser" onclick="helloAlert();"/>
+
+    <script>
+  function myFunction() {
+        var div = document.getElementById('Hello, World'),
+            clone = div.cloneNode(true);
+        document.body.appendChild(clone);
     }
-</script>
+    </script>
 
  
 
