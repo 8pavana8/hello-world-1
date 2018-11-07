@@ -32,9 +32,16 @@ function dup() {document.getElementById("clone").innerHTML="Hello, Browser";}
 <input type="button" value="Hello, Stranger" onclick="dup()"/>
 <script>
 function dup() {
-  var name=prompt
+  var name=prompt("Enter your name");
+}
+  if (name != null) {
+    document.getElementById("demo").innerHTML =
+    "Hello " + person + "! What's up?";
 }
 </script>
+  
+ 
+  
 
   </body>
 </html>
