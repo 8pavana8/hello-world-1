@@ -23,12 +23,15 @@
   
   </script>
 
-   
-<input type="button" value="Duplicate Browser" onclick="dup()"/>
-<p id="clone"></p>
-<script>
-function dup() {document.getElementById("clone").innerHTML="Hello, World";}
+   <script>
+    function myFunction() {
+        var h = document.createElement("p");
+        var t = document.createTextNode("Hello World");
+        h.appendChild(t);
+        document.body.appendChild(h);
+    }
 </script>
+
  
 
    
