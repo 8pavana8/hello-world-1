@@ -32,10 +32,15 @@
  
 <input type="button" value="Hello, Stranger" onclick="dup()"/>
 
-  <script>
-function dup() {
-var name =prompt("Enter your name", "Pavana Manoj");
- 
+  var Name = prompt("Enter your name", "<name goes here>");
+
+if (Name!= null) {
+
+    document.getElementById("welcome").innerHTML =
+
+    "Hello " + Name + "! What's up?";
+
+}
 }
   </script>
 
